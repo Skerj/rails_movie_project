@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project will demonstrate the skills I have learned in rails!
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+I will be (hopefully) creating a website about movies and actors. I will be displaying relationships between movies and actors and possibly genres. I might also add the ability for users to make comments on movies. Wahoo!
