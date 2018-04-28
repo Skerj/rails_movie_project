@@ -4,3 +4,6 @@ Genre: <%= @movie.genre %><br>
 <% @movie.actors.each do |actor| %>
 	<%= link_to actor.name, actor_path(actor) %><br>
 <% end %>
+
+<br>
+<%= link_to "Show all movies", movies_path %>

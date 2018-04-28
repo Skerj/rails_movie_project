@@ -4,3 +4,5 @@ Age: <%= @actor.age %><br>
 <% @actor.movies.each do |movie| %>
 	<%= link_to movie.title, movie_path(movie) %><br>
 <% end %>
+<br>
+<%= link_to "Show all actors", actors_path %>
