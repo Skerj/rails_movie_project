@@ -1,9 +1,10 @@
 <h1>Movies</h1>
 <ul>
 	<% @movies.each do |movie| %>
-		<li><%= link_to movie.title, movie_path(movie) %></li>
-		Starring: <% movie.actors.each do |actor| %>
-		<%= actor.name %>
+		<li><h3><%= link_to movie.title, movie_path(movie) %></h3></li>
+		Starring:<br>
+		<% movie.actors.each do |actor| %>
+		<%= actor.name %><br>
 		<% end %>
 	<% end %>
 </ul>
