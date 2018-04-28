@@ -4,7 +4,7 @@
 		<li><h3><%= link_to movie.title, movie_path(movie) %></h3></li>
 		Starring:<br>
 		<% movie.actors.each do |actor| %>
-		<%= actor.name %><br>
+			<%= link_to actor.name, actor_path(actor) %><br>
 		<% end %>
 	<% end %>
 </ul>
