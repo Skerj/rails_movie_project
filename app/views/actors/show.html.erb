@@ -1,0 +1,6 @@
+<h1><%= @actor.name %></h1>
+Age: <%= @actor.age %><br>
+<h4>Movies:</h4>
+<% @actor.movies.each do |movie| %>
+	<%= link_to movie.title, movie_path(movie) %><br>
+<% end %>
