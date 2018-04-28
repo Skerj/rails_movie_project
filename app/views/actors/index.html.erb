@@ -1,3 +1,12 @@
-<% @actors.each do |actor| %>
-	<%= actor.name %>
-<% end %>
+<h1>Actors</h1>
+<ul>
+	<% @actors.each do |actor| %>
+	<li>
+		<h3><%= link_to actor.name, actor_path(actor) %></h3>
+		As seen in:<br>
+		<% actor.movies.each do |movie| %>
+			<%= link_to movie.title, movie_path(movie) %><br>
+		<% end %>
+	<% end %>
+	</li>
+</ul>
