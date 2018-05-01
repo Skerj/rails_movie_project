@@ -1,6 +1,5 @@
 class MoviesController < ApplicationController
 	def index
-		raise session.inspect
 		@movies = Movie.all
 	end
 
@@ -10,9 +9,12 @@ class MoviesController < ApplicationController
 
 	def create
 		#raise params.inspect
-		movie = Movie.create(movie_params)
-
-		redirect_to movie_path(movie)
+		movie = Movie.new(movie_params)
+		if movie.save
+			redirect_to movie_path(movie)
+		else
+			render :new
+		end
 	end
 
 	def show

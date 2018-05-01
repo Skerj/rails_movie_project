@@ -1,6 +1,8 @@
 class Movie < ApplicationRecord
 	has_many :actor_movies
 	has_many :actors, through: :actor_movies
+	validates :title, presence: true, uniqueness: true
+	validates :genre, presence: true
 	accepts_nested_attributes_for :actors
 
 	def actors_attributes=(actor_attributes)
