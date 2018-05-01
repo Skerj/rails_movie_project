@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
 	def index
+		raise session.inspect
 		@movies = Movie.all
 	end
 
