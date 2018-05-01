@@ -7,7 +7,7 @@
 
 	<%= f.fields_for :actors, @movie.actors.build do |actor_fields| %>
 		Actor Name <%= actor_fields.text_field :name %><br>
-		Actor Age <%= actor_fields.text_field :age %>
+		Actor Age <%= actor_fields.text_field :age %><br>
 	<% end %>
 	<%= f.submit %>
 <% end %>
