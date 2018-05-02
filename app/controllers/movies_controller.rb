@@ -18,7 +18,6 @@ class MoviesController < ApplicationController
 	end
 
 	def show
-		#raise params.inspect
 		@movie = Movie.find(params[:id])
 	end
 
