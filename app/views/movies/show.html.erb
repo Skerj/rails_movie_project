@@ -6,5 +6,5 @@ Genre: <%= @movie.genre %><br>
 <% end %>
 
 <br>
-<%= link_to "Add actor", new_actor_path %><br>
+<%= link_to "Add actor", '/movies/:id/actors/new' %><br>
 <%= link_to "Show all movies", movies_path %>
