@@ -1,7 +1,7 @@
 class ActorsController < ApplicationController
 	before_action :authentication_required
 	before_action :user_info
-	
+
 	def index
 		@actors = Actor.all
 	end
@@ -11,7 +11,12 @@ class ActorsController < ApplicationController
 	end
 
 	def create
-
+		@actor = Actor.new(actor_params)
+		if @actor.save
+			redirect_to actor_path(@actor)
+		else
+			render :new
+		end
 	end
 
 	def show
