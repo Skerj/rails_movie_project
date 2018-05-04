@@ -1,4 +1,6 @@
 class ActorsController < ApplicationController
+	before_action :authentication_required
+	
 	def index
 		@actors = Actor.all
 	end
