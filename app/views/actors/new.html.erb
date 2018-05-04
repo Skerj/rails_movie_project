@@ -1,1 +1,8 @@
-<%= form_for @actor
+<h1>Create a new actor:</h1>
+
+<%= form_for @actor do |f| %>
+	Select Movie: <%= f.collection_select(:movie_ids, Movie.all, :id, :title) %><br>
+	Actor name: <%= f.text_field :name %><br>
+	Actor age: <%= f.number_field :age %><br>
+	<%= f.submit %>
+<% end %>

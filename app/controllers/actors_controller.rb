@@ -11,6 +11,7 @@ class ActorsController < ApplicationController
 	end
 
 	def create
+		#raise params.inspect
 		@actor = Actor.new(actor_params)
 		if @actor.save
 			redirect_to actor_path(@actor)
@@ -21,5 +22,11 @@ class ActorsController < ApplicationController
 
 	def show
 		@actor = Actor.find(params[:id])
+	end
+
+	private
+
+	def actor_params
+		params.require(:actor).permit(:movies, :name, :age)
 	end
 end
