@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
 	before_action :authentication_required
+	before_action :user_info
 	
 	def index
 		@movies = Movie.all
