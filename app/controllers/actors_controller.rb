@@ -7,7 +7,7 @@ class ActorsController < ApplicationController
 	end
 
 	def new
-		raise params.inspect
+		#raise params.inspect
 		@actor = Actor.new
 	end
 
@@ -28,6 +28,6 @@ class ActorsController < ApplicationController
 	private
 
 	def actor_params
-		params.require(:actor).permit(:movies, :name, :age)
+		params.require(:actor).permit(:movie_ids, :name, :age)
 	end
 end
