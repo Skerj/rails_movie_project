@@ -7,6 +7,7 @@ class ActorsController < ApplicationController
 	end
 
 	def new
+		raise params.inspect
 		@actor = Actor.new
 	end
 
