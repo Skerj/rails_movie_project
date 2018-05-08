@@ -8,7 +8,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <header>
-  	<% if logged_in? %>
+  	<% if logged_in? && !@hide_header %>
 	  	Hi, <%= @user.username %><br>
 			<%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
 				<input type=submit value='logout'>
