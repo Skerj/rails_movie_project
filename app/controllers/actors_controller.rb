@@ -4,6 +4,7 @@ class ActorsController < ApplicationController
 
 	def index
 		@actors = Actor.all
+		@actors = @actors.sort_by &:name
 	end
 
 	def new
