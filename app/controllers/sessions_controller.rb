@@ -6,9 +6,13 @@ class SessionsController < ApplicationController
 	def create
 		#raise params.inspect
 		user = User.find_by(username: params[:user][:username])
-		session[:user_id] = user.id
+		if user && user.authenticate(params[:user][:password])
+			session[:user_id] = user.id
 
-		redirect_to root_path
+			redirect_to root_path
+		else
+			redirect_to login_path
+		end
 	end
 
 	def destroy
