@@ -1,5 +1,17 @@
 <h1>Create a new actor:</h1>
 
+<% if @actor.errors.any? %>
+	<div id="error_explanation">
+		<h3><%= pluralize(@actor.errors.count, "error") %></h3>
+
+		<ul>
+			<% @actor.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>
+
 <%= form_for @actor do |f| %>
 	Select Movie: <%= f.collection_select(:movie_ids, Movie.all, :id, :title) %><br>
 	Actor name: <%= f.text_field :name %><br>

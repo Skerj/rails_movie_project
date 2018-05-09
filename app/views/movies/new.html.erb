@@ -1,12 +1,16 @@
-<%= form_for @movie do |f| %>
-	<% if @movie.errors.any? %>
-		<h2>Errors:</h2>
+<% if @movie.errors.any? %>
+	<div id="error_explanation">
+		<h3><%= pluralize(@movie.errors.count, "error") %></h3>
+
 		<ul>
 			<% @movie.errors.full_messages.each do |message| %>
 				<li><%= message %></li>
 			<% end %>
 		</ul>
-	<% end %>
+	</div>
+<% end %>
+
+<%= form_for @movie do |f| %>
 
 	<%= f.label :title %>
 	<%= f.text_field :title %><br>
