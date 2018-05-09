@@ -1,15 +1,3 @@
-<% if @user.errors.any? %>
-	<div id="error_explanation">
-		<h3><%= pluralize(@user.errors.count, "error") %></h3>
-
-		<ul>
-			<% @user.errors.full_messages.each do |message| %>
-				<li><%= message %></li>
-			<% end %>
-		</ul>
-	</div>
-<% end %>
-
 <%= form_for @user, url: login_path, method: :post do |f| %>
 	<%= f.label :username %>
 	<%= f.text_field :username %><br>
