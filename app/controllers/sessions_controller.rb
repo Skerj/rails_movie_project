@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
 	def new
+		@hide_header = true
 		if logged_in?
 			redirect_to root_path
 		else
@@ -8,15 +9,19 @@ class SessionsController < ApplicationController
 	end
 
 	def create
-		#raise request.env["omniauth.auth"].inspect
+		#raise request.env["omniauth.auth"]["info"].inspect
 		if auth_hash = request.env["omniauth.auth"]
 			#raise auth_hash.inspect
-			oauth_email = request.env["omniauth.auth"]["email"]
-			if user = User.find_by(:email => oauth_email)
+			oauth_id = request.env["omniauth.auth"]["uid"]
+			oauth_name = request.env["omniauth.auth"]["info"]["nickname"]
+			oauth_email = request.env["omniauth.auth"]["info"]["email"]
+			if user = User.find_by(id: oauth_id)
+				#raise "1"
 				session[:user_id] = user.id
 				redirect_to root_path
 			else
-				user = User.create(email: oauth_email)
+				#raise "2"
+				user = User.create(id: oauth_id, username: oauth_name, email: oauth_email, password: SecureRandom.hex)
 				session[:user_id] = user.id
 				redirect_to root_path
 			end
