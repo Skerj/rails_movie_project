@@ -1,3 +1,5 @@
+<h1>New Movie:</h1>
+
 <% if @movie.errors.any? %>
 	<div id="error_explanation">
 		<h3><%= pluralize(@movie.errors.count, "error") %></h3>
@@ -24,3 +26,5 @@
 	<% end %>
 	<%= f.submit %>
 <% end %>
+
+<%= link_to "Back to movies", movies_path %>
