@@ -10,6 +10,7 @@ class ActorsController < ApplicationController
 	def new
 		#raise params.inspect
 		@actor = Actor.new
+		@movie = Movie.find_by(id: params[:movie_id])
 	end
 
 	def create

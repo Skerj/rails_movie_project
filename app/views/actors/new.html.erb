@@ -13,7 +13,11 @@
 <% end %>
 
 <%= form_for @actor do |f| %>
-	Select Movie: <%= f.collection_select(:movie_ids, Movie.all, :id, :title) %><br>
+	<% if @movie %>
+		Select Movie: <%= f.collection_select(:movie_ids, Movie.all, :id, :title, {:selected => @movie.id}) %><br>
+	<% else %>
+		Select Movie: <%= f.collection_select(:movie_ids, Movie.all, :id, :title) %><br>
+	<% end %>
 	Actor name: <%= f.text_field :name %><br>
 	Actor age: <%= f.number_field :age %><br>
 	<%= f.submit %>
