@@ -11,4 +11,8 @@ class Movie < ApplicationRecord
 			self.actors << actor
 		end
 	end
+
+	def self.genre_count
+		self.group(:genre).count
+	end
 end
