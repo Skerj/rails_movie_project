@@ -12,19 +12,10 @@ class SessionsController < ApplicationController
 		#raise request.env["omniauth.auth"]["info"].inspect
 		if auth_hash = request.env["omniauth.auth"]
 			#raise auth_hash.inspect
-			oauth_id = request.env["omniauth.auth"]["uid"]
-			oauth_name = request.env["omniauth.auth"]["info"]["nickname"]
-			oauth_email = request.env["omniauth.auth"]["info"]["email"]
-			if user = User.find_by(id: oauth_id)
-				#raise "1"
-				session[:user_id] = user.id
-				redirect_to root_path
-			else
-				#raise "2"
-				user = User.create(id: oauth_id, username: oauth_name, email: oauth_email, password: SecureRandom.hex)
-				session[:user_id] = user.id
-				redirect_to root_path
-			end
+			user = User.find_or_create_by_omniauth(auth_hash)
+			session[:user_id] = user.id
+
+			redirect_to root_path
 		else
 			user = User.find_by(username: params[:user][:username])
 			if user && user.authenticate(params[:user][:password])
