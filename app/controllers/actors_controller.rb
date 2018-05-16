@@ -33,6 +33,14 @@ class ActorsController < ApplicationController
 		redirect_to actors_path
 	end
 
+	def oldest_actors
+		@actors = Actor.oldest_actors
+	end
+
+	def youngest_actors
+		@actors = Actor.youngest_actors
+	end
+
 	private
 
 	def actor_params
