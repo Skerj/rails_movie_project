@@ -4,7 +4,7 @@
 This project will demonstrate the skills I have learned in rails!
 
 
-This is a basic web app that allows you to make insert movies and actors into a database and have them relate to each other. It then relays that information back to you in a readable format.
+This is a basic web app that allows you to insert movies and actors into a database and have them relate to each other. It then relays that information back to you in a readable format.
 
 ## Instructions
 Fork and clone this repo.
