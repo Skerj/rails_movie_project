@@ -19,3 +19,6 @@ Run ```rake db:migrate``` to migrate the databases.
 3. Commit your changes ```git commit -m 'Add some feature'```
 4. Push to the branch ```git push origin my-new-feature```
 5. Create a new Pull Request
+
+## Licensing
+This project has been licensed under the MIT open source license.
