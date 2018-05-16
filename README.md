@@ -13,6 +13,8 @@ Make sure to run ```bundle install```.
 
 Run ```rake db:migrate``` to migrate the databases.
 
+I included some seed data as well. Run ```rake db:seed``` to get started.
+
 ## Contributing
 1. Fork this repo ( https://github.com/Skerj/rails_movie_project/fork )
 2. Create your feature branch ```git checkout -b my-new-feature```
