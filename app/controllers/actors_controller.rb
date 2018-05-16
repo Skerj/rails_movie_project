@@ -35,6 +35,7 @@ class ActorsController < ApplicationController
 
 	def oldest_actors
 		@actors = Actor.oldest_actors
+		#i = 0
 	end
 
 	def youngest_actors
