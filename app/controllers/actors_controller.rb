@@ -13,6 +13,18 @@ class ActorsController < ApplicationController
 		@movie = Movie.find_by(id: params[:movie_id])
 	end
 
+	def edit
+		@actor = Actor.find_by(id: params[:id])
+		@movie = Movie.find_by(id: params[:movie_id])
+	end
+
+	def update
+		#raise params.inspect
+		@actor = Actor.find_by(params[:actor][:id])
+		@actor.update(name: params[:actor][:name], age: params[:actor][:age])
+		redirect_to actor_path(@actor)
+	end
+
 	def create
 		#raise params.inspect
 		@actor = Actor.new(actor_params)
