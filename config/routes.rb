@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :movies
   resources :actors
   resources :users, only: [:new, :create]
+  resources :comments
 
   root 'welcome#home'
 end
