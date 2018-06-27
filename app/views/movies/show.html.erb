@@ -5,11 +5,15 @@ Genre: <%= @movie.genre %><br>
 	<%= link_to actor.name, actor_path(actor) %><br>
 <% end %><br>
 
-<!-- have to make a sql statement to select all comments that have movie id of this movie in controller probably -->
+<!-- have to make a sql statement to select all comments that have movie id of this movie in controller probably(this might not update unless a refresh happens so will probably have to use ajax) -->
 
 <% @movie.comments.each do |comment| %>
-	<%= comment.body %><br>
+	<%= comment.user.username %>: <%= comment.body %><br>
 <% end %><br>
+
+<%= link_to "Add comment", new_comment_path %>
+
+<!-- here i will have ajax for new comments -->
 
 <br>
 <%= link_to "Add actor", '/movies/' + @movie.id.to_s + '/actors/new' %><br>
