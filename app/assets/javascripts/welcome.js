@@ -1,15 +1,15 @@
-$(function() {
-	$('.movies_link').on("click", function(e) {
-		// debugger
-		$.ajax({
-			method: "GET",
-			url: this.href
-		}).success(function(response) {
-			$('div.movie_info').html(response);
-		});
-	e.preventDefault();
-	});
-})
+// $(function() {
+// 	$('.movies_link').on("click", function(e) {
+// 		// debugger
+// 		$.ajax({
+// 			method: "GET",
+// 			url: this.href
+// 		}).success(function(response) {
+// 			$('div.movie_info').html(response);
+// 		});
+// 	e.preventDefault();
+// 	});
+// })
 
 //     // Fire some ajax.
 //     // $.ajax({
