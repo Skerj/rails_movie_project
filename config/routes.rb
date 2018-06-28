@@ -7,10 +7,13 @@ Rails.application.routes.draw do
 	get '/actors/oldest_actors' => 'actors#oldest_actors'
 	get '/actors/youngest_actors' => 'actors#youngest_actors'
 
-  resources :movies
-  resources :actors
+  resources :movies do
+  	resources :comments
+  end
+  resources :actors do
+  	resources :comments
+  end
   resources :users, only: [:new, :create]
-  resources :comments
 
   root 'welcome#home'
 end
