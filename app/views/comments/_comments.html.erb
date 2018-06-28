@@ -1,3 +1,5 @@
-<% commentable.comments.reverse_each do |comment| %>
-	<%= comment.user.username %>: <%= comment.body %><br>
-<% end %>
+<div>
+	<% commentable.comments.reverse_each do |comment| %>
+		<p class="lead"><%= comment.user.username %>: <%= comment.body %></p>
+	<% end %>
+</div>
