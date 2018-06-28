@@ -5,6 +5,13 @@ Age: <%= @actor.age %><br>
 	<%= link_to movie.title, movie_path(movie) %><br>
 <% end %>
 <br>
+
+<h3>Comments</h3>
+
+<%= render partial: "comments/comments", locals: { commentable: @actor } %>
+<%= render partial: "comments/form", locals: { commentable: @actor } %>
+
+
 <%= link_to "Edit actor", edit_actor_path(@actor) %><br>
 <%= link_to "Delete actor", actor_path(@actor), method: :delete %><br>
 <%= link_to "Show all actors", actors_path %>

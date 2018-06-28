@@ -6,6 +6,7 @@ Genre: <%= @movie.genre %><br>
 <% end %><br>
 
 <!-- have to make a sql statement to select all comments that have movie id of this movie in controller probably(this might not update unless a refresh happens so will probably have to use ajax) -->
+<h3>Comments</h3>
 
 <%= render partial: "comments/comments", locals: { commentable: @movie } %>
 <%= render partial: "comments/form", locals: { commentable: @movie } %>
