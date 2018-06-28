@@ -11,7 +11,9 @@ class CommentsController < ApplicationController
 	end
 
 	def new
+		#raise params.inspect
 		@comment = Comment.new
+
 	end
 
 	def create

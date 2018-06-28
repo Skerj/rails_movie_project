@@ -11,7 +11,7 @@ Genre: <%= @movie.genre %><br>
 	<%= comment.user.username %>: <%= comment.body %><br>
 <% end %><br>
 
-<%= link_to "Add comment" %>
+<%= link_to "Add comment", new_movie_comment_path(@movie) %>
 
 <!-- here i will have ajax for new comments -->
 
