@@ -4,6 +4,6 @@ class Actors::CommentsController < CommentsController
 	private
 
 	def set_commentable
-		@commentable = Actor.find(params[:film_id])
+		@commentable = Actor.find(params[:actor_id])
 	end
 end
