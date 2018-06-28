@@ -12,7 +12,7 @@ Genre: <%= @movie.genre %><br>
 <%= render partial: "comments/form", locals: { commentable: @movie } %>
 
 <!-- here i will have ajax for new comments -->
-
+<br>
 <br>
 <%= link_to "Add actor", '/movies/' + @movie.id.to_s + '/actors/new' %><br>
 <%= link_to "Delete movie", movie_path(@movie), method: :delete %><br>

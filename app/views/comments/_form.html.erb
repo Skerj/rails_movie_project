@@ -1,4 +1,8 @@
 <%= form_for [commentable, Comment.new] do |f| %>
-	<%= f.text_area :body, placeholder: "Add a comment" %><br>
-	<%= f.submit %>
+	<div>
+		<%= f.text_area :body, placeholder: "Add a comment" %><br>
+	</div>
+	<div>
+		<%= f.submit "Submit", class: "btn btn-primary" %>
+	</div>
 <% end %>
