@@ -12,12 +12,25 @@
   </head>
   <header>
     <div class="container">
-    	<% if logged_in? && !@hide_header %>
-  	  	Hi, <%= @user.username %><br>
-  			<%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
-  				<input type=submit value='logout'>
-  			<% end %>
-  		<% end %>
+      <div id="current-user-header">
+      	<% if logged_in? && !@hide_header %>
+    	  	Hi, <%= @user.username %>
+    			<%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
+    				<input type=submit value='logout' class='btn btn-secondary btn-sm'>
+    			<% end %>
+    		<% end %>
+      </div>
+      <ul class="nav">
+        <li class="nav-item">
+          <%= link_to "Home", root_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Movies", movies_path, class: "nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Actors", actors_path, class: "nav-link active" %>
+        </li>
+      </ul>
     </div>
   </header>
 
