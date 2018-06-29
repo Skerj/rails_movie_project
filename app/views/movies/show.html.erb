@@ -16,4 +16,3 @@ Genre: <%= @movie.genre %><br>
 <br>
 <%= link_to "Add actor", '/movies/' + @movie.id.to_s + '/actors/new' %><br>
 <%= link_to "Delete movie", movie_path(@movie), method: :delete %><br>
-<%= link_to "Show all movies", movies_path %>

@@ -11,12 +11,12 @@
     <%= javascript_include_tag 'application' %>
   </head>
   <header>
-    <div class="container">
+    <div class="container" id="header-container">
       <div id="current-user-header">
       	<% if logged_in? && !@hide_header %>
     	  	Hi, <%= @user.username %>
     			<%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
-    				<input type=submit value='logout' class='btn btn-secondary btn-sm'>
+    				<input type=submit value='logout' class='btn btn-link'>
     			<% end %>
     		<% end %>
       </div>
