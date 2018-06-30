@@ -27,11 +27,21 @@ class ActorsController < ApplicationController
 
 	def create
 		#raise params.inspect
-		@actor = Actor.new(actor_params)
-		if @actor.save
-			redirect_to actor_path(@actor)
+		@movie = Movie.find_by(id: params[:actor][:movie_ids])
+		if @actor = Actor.find_by(name: params[:actor][:name])
+			@movie.actors << @actor
+			if @actor.save
+				redirect_to actor_path(@actor)
+			else
+				render :new
+			end
 		else
-			render :new
+			@actor = Actor.new(actor_params)
+			if @actor.save
+				redirect_to actor_path(@actor)
+			else
+				render :new
+			end
 		end
 	end
 

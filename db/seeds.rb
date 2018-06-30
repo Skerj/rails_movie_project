@@ -17,7 +17,7 @@ vacation = Movie.create(title: "Vacation", genre: "Comedy")
 caddyshack = Movie.create(title: "Caddyshack", genre: "Comedy")
 groundhog_day = Movie.create(title: "Groundhog Day", genre: "Comedy")
 
-adam = Actor.find_by(name: "Adam Sandler")
+adam = Actor.create(name: "Adam Sandler", age: 51)
 jim = Actor.create(name: "Jim Carrey", age: 56)
 chevy = Actor.create(name: "Chevy Chase", age: 74)
 steve = Actor.create(name: "Steve Martin", age: 72)
