@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
 	end
 
 	def create
-		raise request.env["omniauth.auth"]["info"].inspect
+		#raise request.env["omniauth.auth"]["info"].inspect
 		if auth_hash = request.env["omniauth.auth"]
 			#raise auth_hash.inspect
 			user = User.find_or_create_by_omniauth(auth_hash)
