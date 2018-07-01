@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 	post '/login' => 'sessions#create'
 	post '/logout' => 'sessions#destroy'
 	get '/movies/:movie_id/actors/new' => 'actors#new'
-	get '/auth/:provider/callback' => 'sessions#create'
+	get '/auth/github/callback' => 'sessions#create'
 
   resources :movies do
   	resources :comments
