@@ -15,6 +15,16 @@
  */
 @import 'bootstrap';
 
-#current-user-header {
-	float: right;
+nav {
+	ul.navbar-list {
+		margin-bottom: 0;
+		.nav-link {
+			display: inline-block;
+			margin: auto;
+		}
+	}
+}
+
+header {
+	background-color: aquamarine;
 }
