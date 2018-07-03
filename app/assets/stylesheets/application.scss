@@ -18,13 +18,26 @@
 nav {
 	ul.navbar-list {
 		margin-bottom: 0;
+
+		div.navbar-right {
+			display: inline-flex;
+			width: 300px;
+		}
+
 		.nav-link {
 			display: inline-block;
 			margin: auto;
+			color: white;
+		}
+
+		.logout-link {
+			text-color: white;
 		}
 	}
 }
 
 header {
-	background-color: aquamarine;
+	background: rgb(31,178,215);
+	background: linear-gradient(90deg, rgba(31,178,215,1) 0%, rgba(0,144,224,1) 100%);
+	margin-bottom: 20px;
 }

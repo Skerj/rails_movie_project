@@ -33,7 +33,7 @@
               <div id="current-user-header">
                 <% if logged_in? && !@hide_header %>
                   <%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
-                    <input type=submit value='Logout' class='btn btn-link'>
+                    <input type=submit value='Logout' class='logout-link'>
                   <% end %>
                 <% end %>
               </div>
