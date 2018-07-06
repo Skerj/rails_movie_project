@@ -1,3 +1,22 @@
 // Place all the styles related to the Actors controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.actors-container {
+
+	.actors-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+
+		.actor {
+			width: 25%;
+		}
+	}
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}

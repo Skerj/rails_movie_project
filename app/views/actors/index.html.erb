@@ -1,13 +1,17 @@
 <h1>Actors</h1>
-<ul>
-	<%= link_to "Add new actor", new_actor_path %><br>
-	<% @actors.each do |actor| %>
-	<li>
-		<h3><%= link_to actor.name, actor_path(actor) %></h3>
-		As seen in:<br>
-		<% actor.movies.each do |movie| %>
-			<%= link_to movie.title, movie_path(movie) %><br>
+<div class="actors-container">
+	<%= link_to "Add new actor", new_actor_path %>
+	<div class="actors-list">
+		<% @actors.each do |actor| %>
+			<div class="actor">
+				<h3><%= link_to actor.name, actor_path(actor) %></h3>
+				As seen in:<br>
+				<ul>
+					<% actor.movies.each do |movie| %>
+						<li><%= link_to movie.title, movie_path(movie) %></li>
+					<% end %>
+				</ul>
+			</div>
 		<% end %>
-	<% end %>
-	</li>
-</ul>
+	</div>
+</div>
