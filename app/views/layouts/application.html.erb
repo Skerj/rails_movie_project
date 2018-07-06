@@ -13,33 +13,33 @@
   <header>
     <div class="container" id="header-container">
       <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="nav-link">
+        <div class="navbar-content">
+          <div class="nav-link">
             <%= link_to "Home", root_path, class: "nav-link" %>
-          </li>
-          <li class="nav-link">
-            <%= link_to "Movies", movies_path, class: "nav-link" %>
-          </li>
-          <li class="nav-link">
-            <%= link_to "Actors", actors_path, class: "nav-link" %>
-          </li>
-          <div class="navbar-right">
-            <li class="nav-link">
-              <% if logged_in? && !@hide_header %>
-                Hi, <%= @user.username %>
-              <% end %>
-            </li>
-            <li class="nav-link">
-              <div id="current-user-header">
-                <% if logged_in? && !@hide_header %>
-                  <%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
-                    <input type=submit value='Logout' class='logout-link'>
-                  <% end %>
-                <% end %>
-              </div>
-            </li>
           </div>
-        </ul>
+          <div class="nav-link">
+            <%= link_to "Movies", movies_path, class: "nav-link" %>
+          </div>
+          <div class="nav-link">
+            <%= link_to "Actors", actors_path, class: "nav-link" %>
+          </div>
+        </div>
+        <div class="navbar-content-right">
+          <div class="nav-right">
+            <% if logged_in? && !@hide_header %>
+              Hi, <%= @user.username %>
+            <% end %>
+          </div>
+          <div class="nav-right">
+            <div id="current-user-header">
+              <% if logged_in? && !@hide_header %>
+                <%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
+                  <input type=submit value='Logout' class='logout-link'>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+        </div>
       </nav>
     </div>
   </header>

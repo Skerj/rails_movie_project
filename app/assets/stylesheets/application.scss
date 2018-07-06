@@ -16,17 +16,21 @@
 @import 'bootstrap';
 
 nav {
-	ul.navbar-list {
-		margin-bottom: 0;
-
-		div.navbar-right {
-			display: inline-flex;
-			width: 300px;
-		}
+	.navbar-content {
+		display: flex;
+		width: 50%;
 
 		.nav-link {
-			display: inline-block;
-			margin: auto;
+			color: white;
+		}
+	}
+	.navbar-content-right {
+		display: flex;
+		width: 50%;
+		justify-content: flex-end;
+
+		.nav-right {
+			margin-left: 15px;
 			color: white;
 		}
 
