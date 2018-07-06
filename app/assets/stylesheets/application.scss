@@ -21,7 +21,13 @@ nav {
 		width: 50%;
 
 		.nav-link {
-			color: white;
+			.nav-link-a {
+				color: white;
+			}
+
+			.nav-link-a:hover {
+				color: black;
+			}
 		}
 	}
 	.navbar-content-right {
@@ -30,14 +36,24 @@ nav {
 		justify-content: flex-end;
 
 		.nav-right {
-			margin-left: 15px;
+			margin-left: 20px;
 			color: white;
 		}
 
 		.logout-link {
-			text-color: white;
+
 		}
 	}
+}
+
+input[type=submit] {
+	background: 0;
+	border: 0px;
+	color: white;
+}
+
+input[type=submit]:hover {
+	color: black;
 }
 
 header {
