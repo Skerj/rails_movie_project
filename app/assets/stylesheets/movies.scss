@@ -2,18 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.movies-container {
+@media only screen and (min-width: 800px) {
+	.movies-container {
 
-	.movies-list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-start;
+		.movies-list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
 
-		.movie {
-			width: 25%;
+			.movie {
+				width: 25%;
+				overflow: hidden;
+			}
 		}
 	}
 }
+
 
 ul {
 	list-style-type: none;

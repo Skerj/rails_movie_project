@@ -2,15 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.actors-container {
+@media only screen and (min-width: 800px) {
+	.actors-container {
 
-	.actors-list {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: flex-start;
+		.actors-list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: flex-start;
 
-		.actor {
-			width: 25%;
+			.actor {
+				width: 25%;
+				overflow: hidden;
+			}
 		}
 	}
 }
