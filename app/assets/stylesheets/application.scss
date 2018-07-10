@@ -79,7 +79,7 @@ header {
 	}
 
 	.navbar-toggle {
-
+		display: flex;
 	}
 
 	.nav-right {
@@ -88,7 +88,7 @@ header {
 
 	.dropdown-link {
 		align-self: flex-start;
-		display: block;
+		display: initial;
 		position: absolute;
 		cursor: pointer;
 	}
