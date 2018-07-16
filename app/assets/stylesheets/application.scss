@@ -57,6 +57,13 @@ input[type=submit].logout-link:hover {
 	color: black;
 }
 
+.form-button {
+	margin-top: 5px;
+	background-color: rgb(40, 197, 255);
+	border: 0;
+	color: white;
+}
+
 header {
 	background: rgb(31,178,215);
 	background: linear-gradient(90deg, rgba(31,178,215,1) 0%, rgba(0,144,224,1) 100%);

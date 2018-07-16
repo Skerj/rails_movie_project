@@ -24,7 +24,9 @@
 		Actor Name <%= actor_fields.text_field :name %><br>
 		Actor Age <%= actor_fields.text_field :age %><br>
 	<% end %>
-	<%= f.submit %>
+	<%= f.submit "Create Movie", class: "form-button" %>
 <% end %>
 
 <%= link_to "Back to movies", movies_path %>
+
+
