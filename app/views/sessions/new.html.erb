@@ -1,11 +1,11 @@
 <%= form_for @user, url: login_path, method: :post do |f| %>
-	<%= f.label :username %>
+	<%= f.label :username %><br>
 	<%= f.text_field :username %><br>
 
-	<%= f.label :password %>
+	<%= f.label :password %><br>
 	<%= f.password_field :password %><br>
 
-	<%= f.submit "log in" %><br>
+	<%= f.submit "log in", class: "log-in-button" %><br>
 <% end %>
 <%= link_to "Log in with github", "/auth/github" %><br>
 <%= link_to "sign up", new_user_path %>

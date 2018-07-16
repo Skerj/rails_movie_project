@@ -47,13 +47,13 @@
 	text-align: center;
 }
 
-input[type=submit] {
+input[type=submit].logout-link {
 	background: 0;
 	border: 0px;
 	color: white;
 }
 
-input[type=submit]:hover {
+input[type=submit].logout-link:hover {
 	color: black;
 }
 
