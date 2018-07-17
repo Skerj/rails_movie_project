@@ -1,7 +1,7 @@
 // # Place all the behaviors and hooks related to the matching controller here.
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
-// Submit Comments via AJAX - Soon to be replaced by remote true
+// Submit Comments via AJAX
 // $(function(){
 //   $("#new_comment").on("submit", function(e){
 //     // 1. we need the URL to submit the POST request too
@@ -24,4 +24,3 @@
 //     e.preventDefault();
 //   })
 // });
-

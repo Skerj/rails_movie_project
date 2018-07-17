@@ -14,3 +14,5 @@ Genre: <%= @movie.genre %><br>
 <br>
 <%= link_to "Add actor", '/movies/' + @movie.id.to_s + '/actors/new' %><br>
 <%= link_to "Delete movie", movie_path(@movie), method: :delete %><br>
+
+<%= javascript_include_tag 'movies' %>
