@@ -1,5 +1,7 @@
 <div>
-	<% commentable.comments.reverse_each do |comment| %>
-		<p class="lead"><%= comment.user.username %>: <%= comment.body %></p>
-	<% end %>
+	<ul class="comment_list">
+		<% commentable.comments.reverse_each do |comment| %>
+			<li class="lead"><%= comment.user.username %>: <%= comment.body %></li>
+		<% end %>
+	</ul>
 </div>
