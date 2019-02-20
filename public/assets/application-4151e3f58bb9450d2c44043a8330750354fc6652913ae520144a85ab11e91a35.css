@@ -1,0 +1,596 @@
+@media only screen and (min-width: 768px) {
+  /* line 8, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+  .actors-container .actors-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  /* line 13, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+  .actors-container .actors-list .actor {
+    width: 25%;
+    overflow: hidden;
+  }
+}
+/* line 21, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 27, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 31, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+h3 {
+  font-size: 1.4em;
+}
+
+/* line 35, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.full-actors-wrapper {
+  padding: 30px;
+}
+
+/* line 39, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.full-actors-wrapper h1 {
+  margin-bottom: 15px;
+}
+
+/* line 43, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.actors-list {
+  margin-top: 10px;
+}
+
+/* line 47, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.actor {
+  margin-bottom: 10px;
+}
+
+/* line 51, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.actor h3 {
+  margin-bottom: 10px;
+}
+
+/* line 57, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.actor-wrapper {
+  padding: 30px;
+}
+
+/* line 61, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.actor-wrapper h1 {
+  margin-bottom: 15px;
+}
+
+/* line 65, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.actor-wrapper p {
+  font-size: 1.2em;
+}
+
+/* line 69, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.actor-wrapper h3 {
+  margin-bottom: 10px;
+}
+
+/* line 73, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+ul.comment_list {
+  margin-bottom: 15px;
+}
+
+/* line 77, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.comment_list li {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+/* line 82, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new_comment textarea {
+  padding: 5px;
+  border: 1px solid #28c5ff;
+  height: 100px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+/* line 90, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new_comment textarea:focus {
+  outline: none;
+}
+
+/* line 94, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new_comment input[type=submit] {
+  font-size: 1.2em;
+  background-color: #28c5ff;
+  cursor: pointer;
+  color: white;
+  width: 90px;
+  height: 30px;
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+}
+
+/* line 105, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new_comment input[type=submit]:hover {
+  background-color: #5ed1fb;
+}
+
+/* line 111, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new-actor-wrapper {
+  padding: 30px;
+  text-align: center;
+}
+
+/* line 116, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new-actor-wrapper h1 {
+  margin-bottom: 15px;
+}
+
+/* line 120, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new-actor-wrapper select {
+  margin-bottom: 10px;
+  height: 25px;
+  width: 200px;
+  font-size: 1.05em;
+}
+
+/* line 127, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new-actor-wrapper select:focus {
+  outline: none;
+}
+
+/* line 131, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new-actor-wrapper input[type=text] {
+  padding: 5px;
+  border: 1px solid #28c5ff;
+  border-radius: 3px;
+  height: 25px;
+  width: 300px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+/* line 141, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new-actor-wrapper input[type=text]:focus {
+  outline: none;
+}
+
+/* line 145, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new-actor-wrapper input[type=submit] {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  background-color: #28c5ff;
+  cursor: pointer;
+  color: white;
+  width: 150px;
+  height: 30px;
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+}
+
+/* line 157, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/actors.scss */
+.new-actor-wrapper input[type=submit]:hover {
+  background-color: #5ed1fb;
+}
+@media only screen and (min-width: 768px) {
+  /* line 8, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+  .movies-container .movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  /* line 13, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+  .movies-container .movies-list .movie {
+    width: 25%;
+    overflow: hidden;
+  }
+}
+/* line 22, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 28, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 32, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+h3 {
+  font-size: 1.4em;
+}
+
+/* line 36, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.full-movie-wrapper {
+  padding: 30px;
+}
+
+/* line 40, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.full-movie-wrapper h1 {
+  margin-bottom: 15px;
+}
+
+/* line 44, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.movies-list {
+  margin-top: 10px;
+}
+
+/* line 48, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.movie {
+  margin-bottom: 10px;
+}
+
+/* line 52, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.movie h3 {
+  margin-bottom: 10px;
+}
+
+/* line 57, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.movie-wrapper {
+  padding: 30px;
+}
+
+/* line 61, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.movie-wrapper h1 {
+  margin-bottom: 15px;
+}
+
+/* line 65, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.movie-wrapper p {
+  font-size: 1.2em;
+}
+
+/* line 69, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.movie-wrapper h3 {
+  margin-bottom: 10px;
+}
+
+/* line 73, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+ul.comment_list {
+  margin-bottom: 15px;
+}
+
+/* line 77, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.comment_list li {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+/* line 82, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.new_comment textarea {
+  padding: 5px;
+  border: 1px solid #28c5ff;
+  height: 100px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+/* line 90, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.new_comment textarea:focus {
+  outline: none;
+}
+
+/* line 94, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.new_comment input[type=submit] {
+  font-size: 1.2em;
+  background-color: #28c5ff;
+  cursor: pointer;
+  color: white;
+  width: 90px;
+  height: 30px;
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+}
+
+/* line 105, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.new_comment input[type=submit]:hover {
+  background-color: #5ed1fb;
+}
+
+/* line 111, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.new-movie-wrapper {
+  padding: 30px;
+  text-align: center;
+}
+
+/* line 116, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.new-movie-wrapper h1 {
+  margin-bottom: 15px;
+}
+
+/* line 120, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.new-movie-wrapper input[type=text] {
+  padding: 5px;
+  border: 1px solid #28c5ff;
+  border-radius: 3px;
+  height: 25px;
+  width: 300px;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+/* line 130, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.new-movie-wrapper input[type=text]:focus {
+  outline: none;
+}
+
+/* line 134, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.new-movie-wrapper input[type=submit] {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  background-color: #28c5ff;
+  cursor: pointer;
+  color: white;
+  width: 150px;
+  height: 30px;
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+}
+
+/* line 146, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/movies.scss */
+.new-movie-wrapper input[type=submit]:hover {
+  background-color: #5ed1fb;
+}
+/* line 5, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/sessions.scss */
+.form-container {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* line 10, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/sessions.scss */
+.form-fields {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+/* line 15, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/sessions.scss */
+.new_user {
+  width: 100%;
+}
+
+/* line 19, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/sessions.scss */
+.signup-buttons {
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* line 25, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/sessions.scss */
+.new_user input {
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  transition: all .2s ease-in-out;
+  font-size: 1.5em;
+}
+
+/* line 34, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/sessions.scss */
+.new_user input:focus {
+  outline: none;
+}
+
+/* line 38, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/sessions.scss */
+.new_user input[type=text], input[type=password] {
+  background-color: #eaeaea;
+}
+
+/* line 42, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/sessions.scss */
+.new_user input[type=submit] {
+  cursor: pointer;
+}
+
+/* line 46, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/sessions.scss */
+.new_user input[type=submit]:hover {
+  background-color: #5ed1fb;
+}
+
+/* line 50, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/sessions.scss */
+.signup-buttons a {
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+/* line 55, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/sessions.scss */
+.signup-buttons a:hover {
+  color: #28c5ff;
+}
+/* line 5, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/welcome.scss */
+.main-content {
+  width: 75%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* line 11, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/welcome.scss */
+.main-content h1 {
+  margin-bottom: 30px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/* line 26, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+.navbar {
+  height: 60px;
+  display: flex;
+  color: white;
+}
+
+/* line 32, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+.nav-link {
+  display: inline-block;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+
+/* line 38, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+.nav-link-a {
+  color: white;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+/* line 44, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+.nav-link-a:hover {
+  color: #5ed1fb;
+}
+
+/* line 48, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+.navbar-content {
+  width: 50%;
+}
+
+/* line 52, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+.navbar-content-right {
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+/* line 57, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+.dropdown-link {
+  display: none;
+}
+
+/* line 61, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+.nav-right {
+  margin-left: 20px;
+  color: white;
+  text-align: center;
+}
+
+/* line 67, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+.nav-right span {
+  font-size: 1.1em;
+  margin-right: 15px;
+}
+
+/* line 72, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+#current-user-header input[type=submit] {
+  font-size: 1em;
+}
+
+/* line 76, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+#current-user-header input[type=submit]:hover {
+  color: #5ed1fb;
+}
+
+/* line 80, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+input[type=submit].logout-link {
+  background: 0;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+}
+
+/* line 87, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+input[type=submit].logout-link:hover {
+  color: black;
+}
+
+/* line 91, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+.form-button {
+  margin-top: 5px;
+  background-color: #28c5ff;
+  border: 0;
+  color: white;
+}
+
+/* line 98, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+header {
+  background: #1fb2d7;
+  background: linear-gradient(90deg, #1fb2d7 0%, #0090e0 100%);
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 106, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+  .navbar-content,
+  .navbar-content-right,
+  .navbar {
+    flex-direction: column;
+  }
+
+  /* line 112, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+  .navbar .dropdown-link {
+    padding-top: 15px;
+    margin-left: 20px;
+  }
+
+  /* line 117, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+  .navbar-height {
+    height: 275px;
+  }
+
+  /* line 121, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+  .navbar-content {
+    display: none;
+    margin: 60px auto 0 auto;
+  }
+
+  /* line 126, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+  .navbar-content-right {
+    display: none;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  /* line 132, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+  .navbar-toggle {
+    display: flex;
+    text-align: center;
+  }
+
+  /* line 137, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+  .nav-right {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* line 142, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+  .nav-right span {
+    margin: 0;
+    padding-left: 30px;
+  }
+
+  /* line 147, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+  .nav-right a {
+    padding-left: 30px;
+  }
+
+  /* line 151, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+  #current-user-header {
+    padding-left: 30px;
+  }
+
+  /* line 155, /Users/johnmooney/Development/code/rails_movie_project/app/assets/stylesheets/application.scss */
+  .dropdown-link {
+    align-self: flex-start;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}
