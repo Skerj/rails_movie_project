@@ -1,34 +1,35 @@
-<h1>New Movie:</h1>
+<div class="new-movie-wrapper">
+	<h1>New Movie</h1>
 
-<% if @movie.errors.any? %>
-	<div id="error_explanation">
-		<h3><%= pluralize(@movie.errors.count, "error") %></h3>
+	<% if @movie.errors.any? %>
+		<div id="error_explanation">
+			<h3><%= pluralize(@movie.errors.count, "error") %></h3>
 
-		<ul>
-			<% @movie.errors.full_messages.each do |message| %>
-				<li><%= message %></li>
-			<% end %>
-		</ul>
-	</div>
-<% end %>
-
-<%= form_for @movie do |f| %>
-
-	<%= f.label :title %><br>
-	<%= f.text_field :title %><br>
-
-	<%= f.label :genre %><br>
-	<%= f.text_field :genre %><br>
-
-	<%= f.fields_for :actors, @movie.actors.build do |actor_fields| %>
-		Actor Name<br>
-		<%= actor_fields.text_field :name %><br>
-		Actor Age<br>
-		<%= actor_fields.text_field :age %><br>
+			<ul>
+				<% @movie.errors.full_messages.each do |message| %>
+					<li><%= message %></li>
+				<% end %>
+			</ul>
+		</div>
 	<% end %>
-	<%= f.submit "Create Movie", class: "form-button" %>
-<% end %>
 
-<%= link_to "Back to movies", movies_path %>
+	<%= form_for @movie do |f| %>
 
+		<%= f.label :title %><br>
+		<%= f.text_field :title %><br>
+
+		<%= f.label :genre %><br>
+		<%= f.text_field :genre %><br>
+
+		<%= f.fields_for :actors, @movie.actors.build do |actor_fields| %>
+			Actor Name<br>
+			<%= actor_fields.text_field :name %><br>
+			Actor Age<br>
+			<%= actor_fields.text_field :age %><br>
+		<% end %>
+		<%= f.submit "Create Movie", class: "form-button" %>
+	<% end %>
+
+	<%= link_to "Back to movies", movies_path %>
+</div>
 

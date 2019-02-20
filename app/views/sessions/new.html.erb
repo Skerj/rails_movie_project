@@ -1,11 +1,17 @@
-<%= form_for @user, url: login_path, method: :post do |f| %>
-	<%= f.label :username %><br>
-	<%= f.text_field :username %><br>
+<div class="form-container">
+	<div class="form-fields">
+		<%= form_for @user, url: login_path, method: :post do |f| %>
+			<%= f.label :username %><br>
+			<%= f.text_field :username %><br>
 
-	<%= f.label :password %><br>
-	<%= f.password_field :password %><br>
+			<%= f.label :password %><br>
+			<%= f.password_field :password %><br>
 
-	<%= f.submit "log in", class: "form-button" %><br>
-<% end %>
-<%= link_to "Log in with github", "/auth/github" %><br>
-<%= link_to "sign up", new_user_path %>
+			<%= f.submit "log in", class: "form-button" %><br>
+		<% end %>
+	</div>
+	<div class="signup-buttons">
+		<%= link_to "Log in with github", "/auth/github" %><br>
+		<%= link_to "Sign up", new_user_path %>
+	</div>
+</div>

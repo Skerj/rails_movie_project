@@ -1,29 +1,31 @@
-<h1>New Actor:</h1>
+<div class="new-actor-wrapper">
+	<h1>New Actor:</h1>
 
-<% if @actor.errors.any? %>
-	<div id="error_explanation">
-		<h3><%= pluralize(@actor.errors.count, "error") %></h3>
+	<% if @actor.errors.any? %>
+		<div id="error_explanation">
+			<h3><%= pluralize(@actor.errors.count, "error") %></h3>
 
-		<ul>
-			<% @actor.errors.full_messages.each do |message| %>
-				<li><%= message %></li>
-			<% end %>
-		</ul>
-	</div>
-<% end %>
-
-<%= form_for @actor do |f| %>
-	<% if @movie %>
-		Select Movie:<br>
-		<%= f.collection_select(:movie_ids, Movie.all, :id, :title, {:selected => @movie.id}) %><br>
-	<% else %>
-		Select Movie:<br>
-		<%= f.collection_select(:movie_ids, Movie.all, :id, :title) %><br>
+			<ul>
+				<% @actor.errors.full_messages.each do |message| %>
+					<li><%= message %></li>
+				<% end %>
+			</ul>
+		</div>
 	<% end %>
-	Actor name:<br>
-	<%= f.text_field :name %><br>
-	Actor age:<br>
-	<%= f.number_field :age %><br>
-	<%= f.submit "Create Actor", class: "form-button" %>
-<% end %>
-<%= link_to "Back to actors", actors_path %>
+
+	<%= form_for @actor do |f| %>
+		<% if @movie %>
+			Select Movie:<br>
+			<%= f.collection_select(:movie_ids, Movie.all, :id, :title, {:selected => @movie.id}) %><br>
+		<% else %>
+			Select Movie:<br>
+			<%= f.collection_select(:movie_ids, Movie.all, :id, :title) %><br>
+		<% end %>
+		Actor name:<br>
+		<%= f.text_field :name %><br>
+		Actor age:<br>
+		<%= f.number_field :age %><br>
+		<%= f.submit "Create Actor", class: "form-button" %>
+	<% end %>
+	<%= link_to "Back to actors", actors_path %>
+</div>

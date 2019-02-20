@@ -1,17 +1,19 @@
-<h1>Movies</h1>
-<div class="movies-container">
-	<%= link_to "Add new movie", new_movie_path %>
-	<div class="movies-list">
-		<% @movies.each do |movie| %>
-			<div class="movie">
-				<h3><%= link_to movie.title, movie_path(movie) %></h3>
-				Starring:<br>
-				<ul>
-					<% movie.actors.each do |actor| %>
-						<li><%= link_to actor.name, actor_path(actor) %></li>
-					<% end %>
-				</ul>
-			</div>
-		<% end %>
+<div class="full-movie-wrapper">
+	<h1>Movies</h1>
+	<div class="movies-container">
+		<%= link_to "Add new movie", new_movie_path %>
+		<div class="movies-list">
+			<% @movies.each do |movie| %>
+				<div class="movie">
+					<h3><%= link_to movie.title, movie_path(movie) %></h3>
+					Starring:<br>
+					<ul>
+						<% movie.actors.each do |actor| %>
+							<li><%= link_to actor.name, actor_path(actor) %></li>
+						<% end %>
+					</ul>
+				</div>
+			<% end %>
+		</div>
 	</div>
 </div>

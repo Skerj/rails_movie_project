@@ -2,3 +2,56 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.form-container {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.form-fields {
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+.new_user {
+	width: 100%;
+}
+
+.signup-buttons {
+	margin: 0 auto;
+	max-width: 400px;
+	text-align: center;
+}
+
+.new_user input {
+	width: 100%;
+	height: 40px;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	transition: all .2s ease-in-out;
+	font-size: 1.5em;
+}
+
+.new_user input:focus {
+	outline: none;
+}
+
+.new_user input[type=text], input[type=password] {
+	background-color: #eaeaea;
+}
+
+.new_user input[type=submit] {
+	cursor: pointer;
+}
+
+.new_user input[type=submit]:hover {
+	background-color: #5ed1fb;
+}
+
+.signup-buttons a {
+	text-decoration: none;
+	transition: all .2s ease-in-out;
+}
+
+.signup-buttons a:hover {
+	color: #28c5ff;
+}
